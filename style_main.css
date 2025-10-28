@@ -1,0 +1,317 @@
+/* Общие стили */
+body {
+    margin: 0;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+    background-image: url('index.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative; /* Добавлено для позиционирования текста */
+}
+
+/* Стили для текста на фоновом изображении */
+.welcome-text {
+    position: absolute;
+    top: 60%; /* Расположение текста по вертикали */
+    left: 70%; /* Расположение текста по горизонтали */
+    transform: translate(-220%, -50%); /* Центрирование текста */
+    color: white;
+    font-size: 70px;
+    font-weight: light;
+    font-family: 'Montserrat', sans-serif; /* Добавлен шрифт Montserrat */
+    text-shadow: 3px 10px 30px rgba(0, 0, 0, 0.5);
+    z-index: 1; /* Помещаем текст поверх фонового изображения */
+}
+
+/* Стили для шапки */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-color);
+    padding: 18px 100px;
+    box-shadow: 0 0.5rem 50rem rgba(0, 0, 0, 0.1);
+  }
+  .navbar {
+    display: flex;
+  }
+  .navbar a {
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 500;
+  }
+  .navbar a:hover {
+    color: var(--main-color);
+  }
+.left-header h1 {
+    margin: 0 40px;
+}
+
+
+
+/* Стили для модального окна */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 3; /* Помещаем модальное окно поверх всего контента */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal1 {
+    display: none;
+    position: fixed;
+    z-index: 3; /* Помещаем модальное окно поверх всего контента */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+.modal2 {
+  display: none;
+  position: fixed;
+  z-index: 3; /* Помещаем модальное окно поверх всего контента */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+    width: 300px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.modal-content1 {
+    width: 300px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.modal-content2 {
+  width: 300px;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.modal-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.modal-content1 p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.modal-content2 p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.modal-content h1 {
+    margin-bottom: 20px;
+}
+.modal-content h1 {
+  margin-bottom: 20px;
+}
+
+.modal-content form {
+    margin-top: 20px;
+}
+.modal-content1 form {
+    margin-top: 20px;
+}
+.modal-content2 form {
+  margin-top: 20px;
+}
+.modal-content input[type="text"],
+.modal-content2 input[type="text"],
+.modal-content input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 8px;
+    border: 1px solid #505050;
+    border-radius: 3px;
+}
+.modal-content2 input[type="password"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 8px;
+  border: 1px solid #505050;
+  border-radius: 3px;
+}
+ /* Стили для кнопки */
+.modal-content input[type="submit"] {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.modal-content2 input[type="submit"] {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close1 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close2 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+  
+  .home {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+    
+  }
+  /* Фото чувака */
+  .home-img img {
+    width: 100%;
+  }
+
+  /* Доставка пиццы */
+  .home-text h1 {
+    font-size: var(--big-font);
+    position: absolute;
+    top: 23%; /* Расположение текста по вертикали */
+    left: 77%; /* Расположение текста по горизонтали */
+    transform: translate(-220%, -50%); /* Центрирование текста */
+    color: white;
+    font-size: 100px;
+    font-weight: light;
+    font-family: 'NEW YORK', sans-serif; /* Добавлен шрифт Montserrat */
+    text-shadow: 3px 10px 30px rgba(0, 0, 0, 0.5);
+    z-index: 1; /* Помещаем текст поверх фонового изображения */
+
+    color: var(--main-color);  
+  }
+  
+
+  /* Меню по середине */
+  .heading {
+    text-align: center;
+  }
+  .heading span {
+    color: var(--main-color);
+    font-weight: 500;
+  }
+  .heading h2 {
+    font-size: var(--h2-font);
+  }
+  .menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  /*фото*/
+  .box {
+    position: relative;
+    margin-top: 2rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgb(4 64 54 / 10%);
+    padding: 10px;
+  }
+  .box-img {
+    width: 200px;
+    height: 200px;
+  }
+  .box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+  .box h2 {
+    font-size: 1.2rem;
+  }
+  .box h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 4px 0 10px;
+  }
+
+
+  /*контакты*/
+  .address {
+    display: flex;
+    flex-direction: column;
+  }
+  .address i {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  .address span {
+    margin-left: 1rem;
+  }
+  .copyright {
+    padding: 20px;
+    text-align: center;
+  }
+  
